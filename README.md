@@ -1,25 +1,55 @@
-# HackAI — Full Stack AI Chatbot (Flask)
+# AI Assistant Chatbot Hub 🤖
 
-A modern, beginner-friendly, hackathon-ready full stack chatbot app.
+An open-source AI Assistant built for the Elite Coders Open Source Hackathon 2026.
 
 ## Features
-- Chat UI with dark/light themes, smooth animations, avatars, typing indicator
-- Context-aware responses using local intent knowledge base (`data/responses.json`)
-- Fuzzy matching with `difflib`
-- **Currency Converter**: e.g. `Convert 100 USD to INR`
-- **Weather**: e.g. `Weather in London` (requires `WEATHER_API_KEY`)
-- **Time & Date**: e.g. `What time is it?`
-- **Jokes** and **Motivational quotes**
-- Basic assistant commands:
-  - `Who are you?`
-  - `Help`
-  - `What can you do?`
-- Chat history saved in browser `localStorage`
-- Export chat to JSON (bonus)
-- Emoji quick insert (bonus)
+
+* Smart AI Chatbot
+* Currency Converter
+* Weather Information
+* Motivational Quotes
+* Joke Generator
+* Chat History
+* Dark Mode UI
+* Mobile Responsive Design
+
+## Tech Stack
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+
+### Backend
+
+* Python
+* Flask
+
+## Project Structure
+
+```text
+ai-assistant-chatbot-hub/
+│
+├── app.py
+├── chatbot.py
+├── requirements.txt
+├── README.md
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   └── index.html
+│
+└── data/
+    └── responses.json
+```
+
 
 ## Screenshots
-Add screenshots here when presenting at the hackathon.
+<img width="1920" height="1128" alt="AI Chatbot" src="https://github.com/user-attachments/assets/fe1abcd3-28fc-4027-bdda-4e726edc8ced" />
 
 > Tip for hackathon judging: record a short screen video showing **currency conversion**, **weather**, **jokes**, **motivation**, and **typing indicator**.
 
@@ -39,9 +69,6 @@ python -m venv .venv
 .[0m.venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
-### 3) (Optional) Weather API key
-Set `WEATHER_API_KEY` for live weather:
 
 **Windows (PowerShell):**
 ```powershell
@@ -90,6 +117,12 @@ See `open-source.md` for a beginner-friendly contribution guide.
 2) Create a branch: `blackboxai/<your-feature>`
 3) Commit changes
 4) Open a Pull Request
+   
+## Author
+
+Heena Perween
+
+Built during Open Source Hackathon 2026.
 
 
 Please keep code beginner-friendly, documented, and maintainable.
