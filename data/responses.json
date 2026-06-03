@@ -1,1 +1,153 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "examples": [
+        "hi",
+        "hello",
+        "hey there",
+        "good morning",
+        "good afternoon",
+        "good evening"
+      ],
+      "responses": [
+        "Hello! I’m your AI assistant. Ask me anything—try: Help, Convert 100 USD to INR, or Weather in London.",
+        "Hey! 👋 How can I help today?",
+        "Hi there! I can convert currencies, tell jokes, share motivation, and more."
+      ]
+    },
+    {
+      "name": "who_are_you",
+      "examples": [
+        "who are you",
+        "what are you",
+        "your name",
+        "introduce yourself",
+        "about yourself"
+      ],
+      "responses": [
+        "I’m a hackathon-style AI chatbot built with Flask + a lightweight rule engine. I can answer FAQs, do currency conversion, fetch weather (with an API key), and share jokes & motivation.",
+        "I’m your friendly chatbot assistant—fast, local-first, and designed for easy hackathon demos."
+      ]
+    },
+    {
+      "name": "help",
+      "examples": [
+        "help",
+        "what can you do",
+        "commands",
+        "how to use",
+        "features"
+      ],
+      "responses": [
+        "Try these:\n• Who are you?\n• Help / What can you do?\n• Convert 100 USD to INR\n• Weather in London\n• What time is it?\n• Tell me a joke\n• Give me motivation",
+        "I can: convert currencies, show weather (needs WEATHER_API_KEY), share time/date, tell jokes, and generate motivational quotes."
+      ]
+    },
+    {
+      "name": "faq_assistant",
+      "examples": [
+        "how does this work",
+        "how are you answering",
+        "where do you get the answers",
+        "is this using ai",
+        "is it real"
+      ],
+      "responses": [
+        "This chatbot uses simple matching (fuzzy text matching) + a local JSON knowledge base. For weather and currency it can call public APIs.",
+        "Answers come from predefined intents and templates. For some tasks (currency/weather), I fetch live data if the APIs are reachable."
+      ]
+    },
+    {
+      "name": "currency_converter",
+      "examples": [
+        "convert",
+        "currency",
+        "exchange",
+        "usd to inr",
+        "convert 100 usd to inr"
+      ],
+      "responses": [
+        "Example: Convert 100 USD to INR"
+      ]
+    },
+    {
+      "name": "weather",
+      "examples": [
+        "weather",
+        "forecast",
+        "weather in",
+        "temperature in",
+        "will it rain"
+      ],
+      "responses": [
+        "Example: Weather in London"
+      ]
+    },
+    {
+      "name": "time_date",
+      "examples": [
+        "time",
+        "date",
+        "current time",
+        "today",
+        "what is the time"
+      ],
+      "responses": [
+        "Tell me your timezone or I’ll use your device time."
+      ]
+    },
+    {
+      "name": "joke",
+      "examples": [
+        "joke",
+        "tell me a joke",
+        "make me laugh",
+        "funny"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs."
+      ]
+    },
+    {
+      "name": "motivation",
+      "examples": [
+        "motivation",
+        "inspire me",
+        "quote",
+        "motivational",
+        "give me motivation"
+      ],
+      "responses": [
+        "You don’t have to be great to start, but you have to start to be great." 
+      ]
+    },
+    {
+      "name": "greeting",
+      "examples": [
+        "goodbye",
+        "bye",
+        "see you",
+        "thanks"
+      ],
+      "responses": [
+        "Goodbye! Keep building—future you will thank you. 🚀",
+        "See you later! If you need anything else, just ask."
+      ]
+    }
+  ],
+  "jokes": [
+    "Why do programmers hate nature? It has too many bugs.",
+    "I told my computer I needed a break… and it said: ‘No problem, I’ll go to sleep.’",
+    "Why did the Java developer wear glasses? Because they didn’t C#.",
+    "Debugging: being the detective in a crime movie where you are also the murderer."
+  ],
+  "motivational_quotes": [
+    "Focus on progress, not perfection.",
+    "Small steps every day add up to big results.",
+    "You’ve got this. Ship the project. Learn as you go.",
+    "Discipline beats motivation.",
+    "Make it work, make it right, make it fast." 
+  ]
+}
 
