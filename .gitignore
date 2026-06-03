@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Flask / runtime
+instance/
+*.log
+
+# Node (if ever used)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
